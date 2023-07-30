@@ -1,0 +1,29 @@
+---
+import BlogLayout from "../layouts/BlogLayout.astro";
+import PostPreview from "../components/PostPreview/PostPreview.astro";
+import Title from "../components/Title/Title.astro";
+
+const posts = await Astro.glob("./articles/*.md");
+---
+
+<BlogLayout title="Blog">
+    
+    <section class="blog-articles">
+        <Title title="Últimas noticias"/>
+        {
+          posts.map((post) => (
+            <PostPreview post={post} />
+          ))
+        }
+
+</BlogLayout>
+
+<style>
+    .blog-articles {
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    
+  </style>

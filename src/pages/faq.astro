@@ -1,0 +1,15 @@
+---
+import Title from "../components/Title/Title.astro";
+import BlogLayout from "../layouts/BlogLayout.astro";
+import Faqs from "../components/Faqs/Faqs.astro"
+import faqs   from "../data/faqs"; 
+---
+
+<BlogLayout title="FAQ">
+    <section>
+        <Title title="Preguntas Frecuentes"/>
+        {
+            faqs.map( faq => <Faqs item={faq}/> )
+        }
+    </section>
+</BlogLayout>

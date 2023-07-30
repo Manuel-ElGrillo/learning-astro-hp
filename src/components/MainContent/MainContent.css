@@ -1,0 +1,14 @@
+.main-content {
+    width: 70%;
+    margin: 120px auto;
+    color: white;
+  }
+ 
+  .description {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }

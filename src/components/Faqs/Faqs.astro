@@ -1,0 +1,16 @@
+---
+import type { faqs } from "../../interfaces/types";
+import Separator from "../Separator/Separator.astro";
+import './Faqs.css'
+
+interface Props {
+  item: faqs;
+}
+const { item } = Astro.props;
+---
+
+<div class="faqItem">
+  <h3>{item.question}</h3>
+  <p>{item.response}</p>
+  <Separator />
+</div>

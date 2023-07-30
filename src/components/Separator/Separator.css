@@ -1,0 +1,10 @@
+.separator {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .separator img {
+    width: 200px;
+    text-align: center;
+  }

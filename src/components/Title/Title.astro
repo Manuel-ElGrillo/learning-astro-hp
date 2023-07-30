@@ -1,0 +1,19 @@
+---
+import './Title.css'
+
+const { title } = Astro.props;
+
+export interface Title {
+    title: string
+}
+---
+
+<div class="titleContainer">
+    <div>
+      <img src="/assets/title-decoration.webp" alt="" />
+    </div>
+    <h2>{title}</h2>
+    <div>
+      <img src="/assets/title-decoration-bottom.webp" alt="" />
+    </div>
+  </div>

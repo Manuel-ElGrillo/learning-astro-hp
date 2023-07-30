@@ -1,0 +1,16 @@
+a {
+    display: block;
+    text-decoration: none;
+  }
+
+  a .description {
+    padding: 10px;
+    color: white;
+  }
+
+  a .title {
+    font-size: 32px;
+  }
+  img {
+    width: 100%;
+  }
